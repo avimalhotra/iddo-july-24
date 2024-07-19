@@ -77,17 +77,41 @@ nav li{ margin: 0 5px }
 nav a{ color: inherit; display: block; line-height: 80px; padding: 0 15px;}
 .btn{ width: 90px; height: 35px; border: 2px solid; color: var(--red); background: none; border-radius: 10px; font: 16px var(--ff)}
 
+
+
 .banner{ background: #666; color: #fff;  padding: 20rem 0;}
 .banner button{ font-size: 10rem; background: none; border: none; color: inherit; margin-right: 40px; }
-.banner p{ font-size: 60px; font-weight: 100;}
+.banner p{ font-size: 4rem; font-weight: 100;}
 .banner a{ color: var(--red);}
 
 
+.wrap-3{ background: var(--red); color: #fff; padding: 50px 0;}
+h2{font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom: 2rem;}
+.grid{ display: grid; grid-template-columns: repeat(2,1fr); gap: 4rem 2rem;}
+.circle{ width: 100px; height: 100px; border: 2px solid; flex-shrink: 0; border-radius: 50%; display: grid; place-items: center; font-size: 36px; margin-right: 2rem; }
+.wrap-3 h3{ font-size: 16px; line-height: 30px; }
+.wrap-3 p{ font-weight: 100; font-size: 14px; line-height: 22px; }
+
+
+.wrap-4{ color: var(--red); font-size: 36px; text-align: center; line-height: 10rem; }
+
+
+.wrap-5{ padding: 100px 0; background: #ebebeb; color: #363636;}
+.wrap-5 .btn{ margin: 0 10px 6rem 0;}
+.wrap-5 .btn.active{ background: var(--red); color: #fff; border-color: var(--red); }
+.more{ border: none; background: none; color: var(--red); font-size: 36px;}
+.work{ position: relative; margin-bottom: 2rem; overflow: hidden;}
+.over{ position: absolute; background: #fff; bottom: 0; left: 0; right: 0; text-align: center; padding: 20px 0; opacity: 0; transition: 0.5s; bottom: -100px; visibility: hidden; }
+.over h3{ font-size: 18px; color: var(--red); line-height: 40px;}
+.over p{ font-size: 14px; font-weight: 100; color: #898989; height: 20px;}
+.work:hover .over{ opacity: 1; bottom: 0; visibility: visible; }
+.work img{ width: 100%; height: auto;}
 
 
 
 @media screen and (max-width:1220px){ 
     html{ font-size: 13px;}
+    h2{ font-size: 62px;}
 }
 
 @media screen and (max-width:980px){ 
@@ -103,6 +127,7 @@ nav a{ color: inherit; display: block; line-height: 80px; padding: 0 15px;}
     .col-t-10{ flex-basis: 83.33%; max-width: 83.33%;}
     .col-t-11{ flex-basis: 91.66%; max-width: 91.66%;}
     .col-t-12{ flex-basis: 100%; max-width: 100%;}
+    .banner p{ font-size: 3rem;}
 }
 
 @media screen and (max-width:767px){ 
@@ -135,8 +160,11 @@ nav a{ color: inherit; display: block; line-height: 80px; padding: 0 15px;}
     .col-p-10{ flex-basis: 83.33%; max-width: 83.33%;}
     .col-p-11{ flex-basis: 91.66%; max-width: 91.66%;}
     .col-p-12{ flex-basis: 100%; max-width: 100%;}
+    .banner .flex{ flex-flow: column wrap; }
+    .grid{ grid-template-columns: 1fr;}
 }
 
 @media screen and (max-width:359px){ 
    
+
 }
