@@ -1,7 +1,7 @@
 *, ::before, ::after{ margin: 0; box-sizing: border-box; }
 a{ text-decoration: none;}
 img{ vertical-align: bottom;}
-label{ display: inline-block;}
+label{ display: block;}
 button{ padding: 0; cursor: pointer;}
 :disabled{ cursor: not-allowed;}
 iframe{ border: none;}
@@ -154,6 +154,33 @@ canvas{ background: #ddd; margin-top: 50px; max-width: 100%;}
 .accordion a.active::after{ content: '-';}
 .accordion li:first-child p{ display: block;}
 
+.wrap-10{ padding: 23px 0 22px; background: var(--red);}
+.wrap-10 .btn{ background: #fff;}
+.wrap-10 input{ background: none; border: none; height: 35px; width: 370px; font: 100 36px var(--ff); color: #fff;}
+.wrap-10 input::placeholder{ color: #fff;}
+
+
+.wrap-11{ background: #7f7f7f; padding: 28px 0 0 0;}
+.box{ line-height:95px; background: #a6a6a6; color: #fff; text-align: center; margin-bottom: 27px;}
+
+
+.wrap-12{padding: 100px 0; background: #ebebeb; color: #363636; }
+.wrap-12 address{ font: normal 16px/30px var(--ff); color: #898989;}
+.wrap-12 .soc2{ margin: 2rem 0; }
+.wrap-12 .soc2 li{ margin-right: 20px; }
+.wrap-12 .soc2 a{ display: block; color: var(--red);}
+.wrap-12 label{ border: 2px solid #363636; margin: 1rem 0; padding: 17px; }
+.wrap-12 input{ border: none; background: none; }
+.wrap-12 textarea{  border: none; background: none; resize: none; vertical-align: top; height: 42px; }
+.wrap-12 button{ width: 100%; height: 80px; margin: 1rem 0; background: #fff; border: none; border-radius: 10px; color: var(--red); font: 16px var(--ff); }
+.wrap-12 button span.fa{ font-size: 36px; vertical-align: middle;}
+.wrap-12 :is(input, textarea):focus{ outline: none;}
+.wrap-12 label:focus-within{ border-color: var(--red); }
+
+
+.wrap-13{padding: 50px 0; background: #252525; color: #fff; text-align: center; }
+.top{ border: none; background: none; color: var(--red); font-size: 24px;}
+
 
 @media screen and (max-width:1220px){ 
     html{ font-size: 13px;}
@@ -173,6 +200,8 @@ canvas{ background: #ddd; margin-top: 50px; max-width: 100%;}
     .col-t-10{ flex-basis: 83.33%; max-width: 83.33%;}
     .col-t-11{ flex-basis: 91.66%; max-width: 91.66%;}
     .col-t-12{ flex-basis: 100%; max-width: 100%;}
+    .col-t-hide{display: none;}
+    .col-t-auto{ flex-basis: 20%; max-width: 20%;}
     .banner p{ font-size: 3rem;}
     .profile{ margin-left: 50px;}
     .social{ top: 0; left: auto; right: 0; }
@@ -215,6 +244,8 @@ canvas{ background: #ddd; margin-top: 50px; max-width: 100%;}
     .banner .flex{ flex-flow: column wrap; }
     .grid{ grid-template-columns: 1fr;}
     .review blockquote q{ font-size: 24px;}
+    .wrap-10 input{ width: 240px; font-size: 24px;}
+    .col-t-auto{ flex-basis: 50%; max-width: 100%;}
 }
 
 @media screen and (max-width:359px){ 
