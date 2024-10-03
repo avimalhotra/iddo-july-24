@@ -78,13 +78,21 @@ nav{ margin-left: -20px; }
 nav li{ margin: 0 5px }
 nav a{ color: inherit; display: block; line-height: 80px; padding: 0 15px;}
 .btn{ width: 90px; height: 35px; border: 2px solid; color: var(--red); background: none; border-radius: 10px; font: 16px var(--ff)}
+.menu{ display: none; position: absolute; right: 1rem; top: 22px;}
+.menu span{ display: block; height: 2px; background: var(--red); margin: 5px 10px; transition: .3s; transform-origin: right center;}
+.menu.active span:nth-child(1){ transform: rotate(-12deg);}
+.menu.active span:nth-child(2){ opacity: 0;}
+.menu.active span:nth-child(3){ transform: rotate(12deg);}
 
 
-
-.banner{ background: #666; color: #fff;  padding: 20rem 0;}
+.banner{ background: #666; color: #fff;  padding: 1rem 0;}
 .banner button{ font-size: 10rem; background: none; border: none; color: inherit; margin-right: 40px; }
 .banner p{ font-size: 4rem; font-weight: 100;}
 .banner a{ color: var(--red);}
+.video{ position: relative;}
+.video video{ max-width: 100%; height: auto; opacity: 0;}
+.controls{ position: absolute; inset: 0; top: 50%; transform: translateY(-50%); }
+
 
 
 .wrap-3{ background: var(--red); color: #fff; padding: 50px 0;}
@@ -224,8 +232,13 @@ canvas{ background: #ddd; margin-top: 50px; max-width: 100%;}
     .col-m-10{ flex-basis: 83.33%; max-width: 83.33%;}
     .col-m-11{ flex-basis: 91.66%; max-width: 91.66%;}
     .col-m-12{ flex-basis: 100%; max-width: 100%;}
-    .collapse{ display: none;}
+    
     .wrap-8 p{ font-size: 50px;}
+    .menu{ display: inline-block;}
+    .collapse{ display: none; position: absolute; left: 0; right: 0; top: 80px; background: #000; padding-bottom: 1rem;}
+    .collapse .flex{ flex-flow: column; text-align: right;}
+    .collapse .flex nav{ width: 100%; }
+    nav a{ line-height: 40px;}
 }
 
 @media screen and (max-width:460px){ 
@@ -246,9 +259,8 @@ canvas{ background: #ddd; margin-top: 50px; max-width: 100%;}
     .review blockquote q{ font-size: 24px;}
     .wrap-10 input{ width: 240px; font-size: 24px;}
     .col-t-auto{ flex-basis: 50%; max-width: 100%;}
-}
-
-@media screen and (max-width:359px){ 
+    .banner button{ font-size: 5rem;}
+    .banner p{ font-size: 2rem;}
    
-
 }
+
