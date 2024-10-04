@@ -120,16 +120,19 @@ h2{font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom:
 
 .wrap-6{ background: #666; color: #fff; padding: 4rem 0 2rem;}
 .reviews{ text-align: center; }
-.reviews .review{ display: none; }
-.reviews .review.active{ display: block; }
+/* .reviews .review{ display: none; }
+.reviews .review.active{ display: block; } */
 .review blockquote q{  font-size: 36px; font-weight: 100;}
 .review figure{ margin-top: 17px;}
 .review figcaption{ margin-top: 10px; font-weight: bold;}
-.pager{ list-style: none; justify-content: center; padding: 0;}
+/* .pager{ list-style: none; justify-content: center; padding: 0;}
 .pager li{ margin: 2rem 5px 0 5px;}
 .pager a{ display: block; width: 10px; height: 10px; border-radius: 50%; border: 2px solid; color: #fff;}
-.pager a.active{ background: #fff; }
-
+.pager a.active{ background: #fff; } */
+.wrap-6 .bx-wrapper{ background: none; border: none; box-shadow: 0 0;}
+.wrap-6 .bx-wrapper img{ margin: auto;}
+.wrap-6 .bx-wrapper .bx-pager.bx-default-pager a{ border: 2px solid #fff;}
+.wrap-6 .bx-wrapper .bx-pager.bx-default-pager a.active,.wrap-6  .bx-wrapper .bx-pager.bx-default-pager a:focus,.wrap-6  .bx-wrapper .bx-pager.bx-default-pager a:hover{ background: #fff;}
 
 
 .wrap-7{ padding: 100px 0; background: #fff; color: #363636;}
@@ -151,7 +154,7 @@ h2{font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom:
 
 
 .wrap-9{ padding: 100px 0; background: #fff; color: #363636;}
-canvas{ background: #ddd; margin-top: 50px; max-width: 100%;}
+canvas{ margin-top: 50px; max-width: 100%;}
 .accordion{ margin-top: 50px; }
 .accordion li{ margin-bottom: 10px;}
 .accordion a{ display: block; line-height: 50px; border-radius: 10px; border: 1px solid #ebebeb; padding: 0 19px; color: #898989;}
@@ -188,6 +191,13 @@ canvas{ background: #ddd; margin-top: 50px; max-width: 100%;}
 
 .wrap-13{padding: 50px 0; background: #252525; color: #fff; text-align: center; }
 .top{ border: none; background: none; color: var(--red); font-size: 24px;}
+
+.overlay{ background: #000b; position: fixed; inset: 0; z-index: 10; }
+.popup{ text-align: center; background: #fff; position: fixed; left: 50%; top: 100px; padding: 1rem; z-index: 11; transform: translateX(-50%); width: 300px; }
+.popupform{ display: none;}
+.popup label{  margin: 1rem 0;}
+.popup label input{float: right; margin-left: 20px; padding: 5px;}
+.close{position: absolute; right: 5px; top: 5px; border: none; background: none; font-size: 16px; color: var(--red);}
 
 
 @media screen and (max-width:1220px){ 

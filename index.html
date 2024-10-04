@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDDO</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
 </head>
 <body id="home">
     <header>
@@ -172,7 +173,7 @@
                 <div class="col-2"></div>
                 <div class="col-8 col-t-12">
                     <div class="reviews">
-                        <div class="review active">
+                        <div class="review">
                             <blockquote>
                                 <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis recusandae voluptates expedita</q>
                                 <figure>
@@ -183,7 +184,7 @@
                         </div>
                         <div class="review">
                             <blockquote>
-                                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis recusandae voluptates expedita, blanditiis modi similique illo rem animi, officiis nesciunt laborum minima. Dolorum, tempore. Rerum tempore tenetur eligendi sed.</q>
+                                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis recusandae voluptates expedita</q>
                                 <figure>
                                     <img src="img//jack.webp" alt="jack efron" width="70" height="70" loading="lazy">
                                     <figcaption>JACK EFRON</figcaption>
@@ -192,7 +193,7 @@
                         </div>
                         <div class="review">
                             <blockquote>
-                                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis recusandae voluptates expedita, blanditiis modi similique illo rem animi, officiis nesciunt laborum minima. Dolorum, tempore. Rerum tempore tenetur eligendi sed.</q>
+                                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis recusandae voluptates expedita</q>
                                 <figure>
                                     <img src="img//jack.webp" alt="jack efron" width="70" height="70" loading="lazy">
                                     <figcaption>JACK EFRON</figcaption>
@@ -200,11 +201,11 @@
                             </blockquote>
                         </div>
                     </div>
-                    <ol class="pager flex">
+                    <!-- <ol class="pager flex">
                         <li><a class="active" href=""></a></li>
                         <li><a href=""></a></li>
                         <li><a href=""></a></li>
-                    </ol>
+                    </ol> -->
                 </div>
             </div>
         </div>
@@ -308,10 +309,10 @@
             <div class="row">
                 <div class="col-8 col-t-12">
                     <div class="row">
-                        <div class="col-3 col-p-6"><canvas width="170" height="170"></canvas></div>
-                        <div class="col-3 col-p-6"><canvas width="170" height="170"></canvas></div>
-                        <div class="col-3 col-p-6"><canvas width="170" height="170"></canvas></div>
-                        <div class="col-3 col-p-6"><canvas width="170" height="170"></canvas></div>
+                        <div class="col-3 col-p-6"><canvas class="c1" width="170" height="170"></canvas></div>
+                        <div class="col-3 col-p-6"><canvas class="c2" width="170" height="170"></canvas></div>
+                        <div class="col-3 col-p-6"><canvas class="c3" width="170" height="170"></canvas></div>
+                        <div class="col-3 col-p-6"><canvas class="c4" width="170" height="170"></canvas></div>
                     </div>
                     <div class="profile">
                         <h3>Heading</h3>
@@ -408,7 +409,19 @@
             <a class="top" href="#home"><span class="fa fa-chevron-up"></span></a>
         </div>
     </footer>
+    <div class="popupform">
+        <button class="close"><span class="fa fa-times"></span></button>
+        <form >
+            <label>Name: <input type="text" required></label>
+            <label>Email: <input type="email" required></label>
+            <label>Phone: <input type="tel" required></label>
+            <button class="btn">Sign Up</button>
+        </form>
+    </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 $(function(){
     /* tabs */
@@ -463,12 +476,76 @@ $(function(){
         $(".video video").css({opacity:1});
         $(".controls").fadeOut();
         document.querySelector("video").play();
-   })
+   });
+
+   $(".signup").click(function(){
+        if(screen.width<768){ $(".collapse").slideUp();$(".menu").removeClass("active"); }
+        $("body").append('<div class="overlay"></div>');
+        $("body").append('<div class="popup"></div>');
+        $(".popup").html($(".popupform").html());
+        $(".close").click(function(){
+            $(".popup,.overlay").remove();
+        });
+        $(".popup input:first").trigger("focus");
+        $(window).keyup(function(e){
+            if(e.which==27){ $(".popup,.overlay").remove(); }
+        })
+   });
 
 
+   $(".reviews").bxSlider({
+    controls:false,
+    auto:true,
+    pause:2000,
+    autoHover:true
+   });
 
+});
 
-})
+{
+const ctx = document.querySelector('.c1');
+new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: [],
+    datasets: [{
+      label: 'Percentage of data',
+      data: [3,1],
+      borderWidth: 1,
+      backgroundColor: ["#ca3c3c","transparent"]
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+}
+{
+const ctx = document.querySelector('.c2');
+new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: [],
+    datasets: [{
+      label: 'Percentage of data',
+      data: [2,2],
+      borderWidth: 1,
+      backgroundColor: ["#ca3c3c","transparent"]
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+}
 </script>
 </body>
 </html>
