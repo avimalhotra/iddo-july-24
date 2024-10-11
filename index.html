@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDDO</title>
+    <!-- SEO -->
+    <title>IDDO | Single page Website</title>
+    <meta name="description" content="IDDO is single page website design build using Photoshop PSD and CSS 12 grids Layout based on Flexbox with jQuery">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css" media="print" onload="this.media='screen'">
+    <link rel="icon" href="img/jack.webp">
 </head>
 <body id="home">
     <header>
@@ -41,7 +45,7 @@
                 <video src="img/techaltum.mp4" width="1170" height="658" controls></video>
                 <div class="controls">
                     <div class="flex align-center">
-                    <div><button><span class="fa fa-play-circle-o"></span></button></div>
+                    <div><button aria-label="Play Video"><span class="fa fa-play-circle-o"></span></button></div>
                     <div>
                         <p>Let me show you a few things</p>
                         <a href="">Click to play video</a>
@@ -164,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            <button class="more"><span class="fa fa-plus-circle"></span></button>   
+            <button aria-label="see more" class="more"><span class="fa fa-plus-circle"></span></button>   
         </div>
     </section>
     <div class="wrap-6">
@@ -223,9 +227,9 @@
                         <img src="img/michael.webp" alt="michael joe" width="170" height="170" loading="lazy">
                         <div class="social">
                             <ul class="flex">
-                                <li><a href=""><span class="fa fa-twitter"></span></a></li>
-                                <li><a href=""><span class="fa fa-facebook"></span></a></li>
-                                <li><a href=""><span class="fa fa-instagram"></span></a></li>
+                                <li><a aria-label="twitter" href=""><span class="fa fa-twitter"></span></a></li>
+                                <li><a aria-label="facebook" href=""><span class="fa fa-facebook"></span></a></li>
+                                <li><a aria-label="instagram" href=""><span class="fa fa-instagram"></span></a></li>
                             </ul>
                         </div>
                         <div class="profile">
@@ -240,9 +244,9 @@
                         <img src="img/michael.webp" alt="michael joe" width="170" height="170" loading="lazy">
                         <div class="social">
                             <ul class="flex">
-                                <li><a href=""><span class="fa fa-twitter"></span></a></li>
-                                <li><a href=""><span class="fa fa-facebook"></span></a></li>
-                                <li><a href=""><span class="fa fa-instagram"></span></a></li>
+                                <li><a aria-label="twitter" href=""><span class="fa fa-twitter"></span></a></li>
+                                <li><a aria-label="facebook" href=""><span class="fa fa-facebook"></span></a></li>
+                                <li><a aria-label="instagram" href=""><span class="fa fa-instagram"></span></a></li>
                             </ul>
                         </div>
                         <div class="profile">
@@ -257,9 +261,9 @@
                         <img src="img/michael.webp" alt="michael joe" width="170" height="170" loading="lazy">
                         <div class="social">
                             <ul class="flex">
-                                <li><a href=""><span class="fa fa-twitter"></span></a></li>
-                                <li><a href=""><span class="fa fa-facebook"></span></a></li>
-                                <li><a href=""><span class="fa fa-instagram"></span></a></li>
+                                <li><a aria-label="twitter" href=""><span class="fa fa-twitter"></span></a></li>
+                                <li><a aria-label="facebook" href=""><span class="fa fa-facebook"></span></a></li>
+                                <li><a aria-label="instagram" href=""><span class="fa fa-instagram"></span></a></li>
                             </ul>
                         </div>
                         <div class="profile">
@@ -270,7 +274,7 @@
                     </div>
                 </div>
             </div>
-            <button class="more"><span class="fa fa-plus-circle"></span></button>   
+            <button aria-label="see more" class="more"><span class="fa fa-plus-circle"></span></button>   
         </div>
     </section>     
     <div class="wrap-8">
@@ -382,12 +386,12 @@
                     <address>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, esse.</address>
                     <div class="soc2">
                         <ul class="flex">
-                            <li><a href=""><span class="fa fa-twitter"></span></a></li>
-                            <li><a href=""><span class="fa fa-facebook"></span></a></li>
-                            <li><a href=""><span class="fa fa-twitter"></span></a></li>
-                            <li><a href=""><span class="fa fa-twitter"></span></a></li>
-                            <li><a href=""><span class="fa fa-twitter"></span></a></li>
-                            <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a aria-label="twitter" href=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a aria-label="facebook" href=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a aria-label="facebook" href=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a aria-label="facebook" href=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a aria-label="facebook" href=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a aria-label="facebook" href=""><span class="fa fa-twitter"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -406,7 +410,7 @@
         <div class="container">
             <h3>IDDO</h3>
             <p>All RightS Reserved</p>
-            <a class="top" href="#home"><span class="fa fa-chevron-up"></span></a>
+            <a class="top" aria-label="Go To Top" href="#home"><span class="fa fa-chevron-up"></span></a>
         </div>
     </footer>
     <div class="popupform">

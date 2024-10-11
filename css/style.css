@@ -83,12 +83,13 @@ nav a{ color: inherit; display: block; line-height: 80px; padding: 0 15px;}
 .menu.active span:nth-child(1){ transform: rotate(-12deg);}
 .menu.active span:nth-child(2){ opacity: 0;}
 .menu.active span:nth-child(3){ transform: rotate(12deg);}
+.signup{ color: #cb5757 }
 
 
 .banner{ background: #666; color: #fff;  padding: 1rem 0;}
 .banner button{ font-size: 10rem; background: none; border: none; color: inherit; margin-right: 40px; }
 .banner p{ font-size: 4rem; font-weight: 100;}
-.banner a{ color: var(--red);}
+.banner a{ color: #fff;}
 .video{ position: relative;}
 .video video{ max-width: 100%; height: auto; opacity: 0;}
 .controls{ position: absolute; inset: 0; top: 50%; transform: translateY(-50%); }
@@ -107,7 +108,7 @@ h2{font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom:
 
 
 .wrap-5{ padding: 100px 0; background: #ebebeb; color: #363636;}
-.wrap-5 .btn{ margin: 0 10px 6rem 0;}
+.wrap-5 .btn{ margin: 0 10px 6rem 0; color: #a82626;}
 .wrap-5 .btn.active{ background: var(--red); color: #fff; border-color: var(--red); }
 .more{ border: none; background: none; color: var(--red); font-size: 36px;}
 .work{ position: relative; margin-bottom: 2rem; overflow: hidden;}
@@ -120,18 +121,12 @@ h2{font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom:
 
 .wrap-6{ background: #666; color: #fff; padding: 4rem 0 2rem;}
 .reviews{ text-align: center; }
-/* .reviews .review{ display: none; }
-.reviews .review.active{ display: block; } */
 .review blockquote q{  font-size: 36px; font-weight: 100;}
 .review figure{ margin-top: 17px;}
 .review figcaption{ margin-top: 10px; font-weight: bold;}
-/* .pager{ list-style: none; justify-content: center; padding: 0;}
-.pager li{ margin: 2rem 5px 0 5px;}
-.pager a{ display: block; width: 10px; height: 10px; border-radius: 50%; border: 2px solid; color: #fff;}
-.pager a.active{ background: #fff; } */
 .wrap-6 .bx-wrapper{ background: none; border: none; box-shadow: 0 0;}
 .wrap-6 .bx-wrapper img{ margin: auto;}
-.wrap-6 .bx-wrapper .bx-pager.bx-default-pager a{ border: 2px solid #fff;}
+.wrap-6 .bx-wrapper .bx-pager.bx-default-pager a{ border: 2px solid #fff; margin:0 10px;}
 .wrap-6 .bx-wrapper .bx-pager.bx-default-pager a.active,.wrap-6  .bx-wrapper .bx-pager.bx-default-pager a:focus,.wrap-6  .bx-wrapper .bx-pager.bx-default-pager a:hover{ background: #fff;}
 
 
@@ -142,7 +137,7 @@ h2{font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom:
 .social a{ display: block; width: 50px; line-height: 50px; border-radius: 50%; background: var(--red); color: #fff; text-align: center; font-size: 24px; }
 .profile{ margin: 50px 0 40px 100px;}
 .profile h3{ color: var(--red); font-size: 18px; margin-bottom: 5px;}
-.profile small{ color: #898989; font-size: 14px; font-weight: 100; }
+.profile small{ color: #444; font-size: 14px; font-weight: 100; }
 .profile p{ font-weight: 100; font-size: 14px; color: #363636; line-height: 22px; margin-top: 20px;}
 
 
@@ -157,7 +152,7 @@ h2{font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom:
 canvas{ margin-top: 50px; max-width: 100%;}
 .accordion{ margin-top: 50px; }
 .accordion li{ margin-bottom: 10px;}
-.accordion a{ display: block; line-height: 50px; border-radius: 10px; border: 1px solid #ebebeb; padding: 0 19px; color: #898989;}
+.accordion a{ display: block; line-height: 50px; border-radius: 10px; border: 1px solid #ebebeb; padding: 0 19px; color: #666;}
 .accordion a span{ margin-right: 17px; }
 .accordion a::after{ content: '+'; float: right; }
 .accordion p{ margin: 20px; color: #363636; font-size: 14px; font-weight: 100; line-height: 22px; display: none; }
@@ -172,11 +167,11 @@ canvas{ margin-top: 50px; max-width: 100%;}
 
 
 .wrap-11{ background: #7f7f7f; padding: 28px 0 0 0;}
-.box{ line-height:95px; background: #a6a6a6; color: #fff; text-align: center; margin-bottom: 27px;}
+.box{ line-height:95px; background: #666; color: #fff; text-align: center; margin-bottom: 27px;}
 
 
 .wrap-12{padding: 100px 0; background: #ebebeb; color: #363636; }
-.wrap-12 address{ font: normal 16px/30px var(--ff); color: #898989;}
+.wrap-12 address{ font: normal 16px/30px var(--ff); color: #666;}
 .wrap-12 .soc2{ margin: 2rem 0; }
 .wrap-12 .soc2 li{ margin-right: 20px; }
 .wrap-12 .soc2 a{ display: block; color: var(--red);}
